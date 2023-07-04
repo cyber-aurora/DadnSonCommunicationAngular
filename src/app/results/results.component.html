@@ -1,0 +1,9 @@
+<h2>Results:</h2>
+<ul>
+  <li *ngFor="let result of results">
+    ID: {{ result.id }}, Name: {{ result.name }}, Last Name: {{ result.lastName }}, Position: {{ result.position }}, Salary: {{ result.salary }}
+    <span *ngIf="result.characteristics">Characteristics: {{ result.characteristics }}</span>
+  </li>
+</ul>
+<button (click)="addCharacteristics()">Add Characteristics</button>
+

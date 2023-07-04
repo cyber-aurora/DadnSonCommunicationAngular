@@ -1,0 +1,23 @@
+<form (ngSubmit)="submitForm()">
+  <div>
+    <label for="id">ID:</label>
+    <input type="number" id="id" name="id" [(ngModel)]="id" required>
+  </div>
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="name" required>
+  </div>
+  <div>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName" required>
+  </div>
+  <div>
+    <label for="position">Position:</label>
+    <input type="text" id="position" name="position" [(ngModel)]="position" required>
+  </div>
+  <div>
+    <label for="salary">Salary:</label>
+    <input type="number" id="salary" name="salary" [(ngModel)]="salary" required>
+  </div>
+  <button (click)="submitForm()">Add</button>
+</form>
