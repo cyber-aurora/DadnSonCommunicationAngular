@@ -18,7 +18,7 @@ export class ResultsComponent implements OnInit {
 
 
   addCharacteristics() {
-    const characteristics = 'Some characteristics'; // Replace with the characteristics you want to add
+    const characteristics = 'Some characteristics';
     this.results.forEach(result => {
       if (!result.characteristics) {
         result.characteristics = [];
