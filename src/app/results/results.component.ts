@@ -12,7 +12,7 @@ export class ResultsComponent implements OnInit {
   constructor(private formDataService: FormDataService) {}
 
   ngOnInit() {
-    console.log('ResultsComponent initialized');
+    console.log('Results Component initialized');
     this.results = this.formDataService.formData;
   }
 
